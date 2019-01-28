@@ -1,0 +1,10 @@
+<aura:component controller="OneRetrieveController" implements="force:appHostable">
+    <aura:attribute name="me" type="Contact" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+
+    <lightning:card title="3 Attributes, 1 Query, 1 Retrieve">
+        <p><lightning:formattedText value="{!v.me.FirstName}" /></p>
+        <p><lightning:formattedText value="{!v.me.LastName}" /></p>
+        <p><lightning:formattedText value="{!v.me.Email}" /></p>
+    </lightning:card>
+</aura:component>

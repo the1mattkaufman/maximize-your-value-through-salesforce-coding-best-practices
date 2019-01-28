@@ -1,0 +1,16 @@
+<apex:page controller="RerenderController" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockButtons >
+                <apex:commandbutton value="Refresh Page" action="{!refreshPage}" />
+                <apex:commandbutton value="Refresh Field" action="{!refreshPage}" reRender="myNumber" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="myNumber">
+                <apex:pageBlockSectionItem >
+                    <apex:outputLabel value="Random Number" />
+                    <apex:outputText value="{!randomNumber}"  />
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>    
+    </apex:form>
+</apex:page>

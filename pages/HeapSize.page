@@ -1,0 +1,9 @@
+<apex:page controller="HeapSizeController" >
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockTable value="{!accountList}" var="a" >
+                <apex:column value="{!a.Name}" />
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

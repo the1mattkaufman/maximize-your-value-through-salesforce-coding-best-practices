@@ -1,0 +1,18 @@
+<aura:component implements="force:appHostable">
+    <lightning:card title="No JS Controller, 3 Tags" >
+        <lightning:recordViewForm recordId="0031U000001wQDyQAM" objectApiName="Contact">
+            <p><lightning:outputField fieldName="FirstName" /></p>
+            <p><lightning:outputField fieldName="LastName" /></p>
+            <p><lightning:outputField fieldName="Email" /></p>
+        </lightning:recordViewForm>
+    </lightning:card>
+
+    <lightning:card title="No JS Controller, No Tags" >
+        <lightning:recordForm 
+            recordId="0031U000001wQDyQAM" 
+            objectApiName="Contact"
+            layoutType="Full" 
+            mode="view" />
+    </lightning:card>
+
+</aura:component>

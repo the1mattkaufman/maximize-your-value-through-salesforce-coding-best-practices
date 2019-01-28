@@ -1,0 +1,21 @@
+/**
+ * @name subStringBefore
+ * @description Returns the substring that occurs before the first occurrence of the specified separator.
+ * @param lookFor
+ * @param fromWithin
+ * @return String
+ */
+let subStringBefore = ( lookFor, fromWithin ) => {
+  let result = fromWithin;
+  if ( 
+    null != lookFor
+    && null != fromWithin
+    && fromWithin.indexOf(lookFor) > 0 
+  ){
+    result = fromWithin.substring(0,fromWithin.indexOf(lookFor));
+  }
+  return result;
+};
+
+//Minified
+function sb(n,r){var u=r;return null!=n&&null!=r&&r.indexOf(n)>0&&(u=r.substring(0,r.indexOf(n))),u}

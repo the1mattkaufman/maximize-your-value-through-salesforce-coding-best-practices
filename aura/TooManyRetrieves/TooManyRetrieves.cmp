@@ -1,0 +1,13 @@
+<aura:component controller="TooManyRetrievesController" implements="force:appHostable">
+    <aura:attribute name="firstName" type="String" />
+    <aura:attribute name="lastName" type="String" />
+    <aura:attribute name="email" type="String" />
+    <aura:handler name="init" action="{!c.doInit}" value="{!this}" />
+
+    <lightning:card title="3 Attributes, 3 Queries, 3 Retrieves">
+        <p><lightning:formattedText value="{!v.firstName}" /></p>
+        <p><lightning:formattedText value="{!v.lastName}" /></p>
+        <p><lightning:formattedText value="{!v.email}" /></p>
+    </lightning:card>
+
+</aura:component>
